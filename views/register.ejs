@@ -1,0 +1,64 @@
+<%- include('header'); -%>
+<h1><%= title %></h1>
+
+<form class="row g-3 needs-validation"  action="/register" method="POST">
+  <div class="col-md-4">
+    <label for="nom" class="form-label">Nom</label>
+    <input type="text" class="form-control" id="nom" placeholder="Mark" name ="nom" required>
+    <div class="valid-feedback">
+      C'est bon !
+    </div>
+  </div>
+  <div class="col-md-4">
+    <label for="prenom" class="form-label">Pr&eacute;nom</label>
+    <input type="text" class="form-control" id="prenom" placeholder="Otto" name="prenom"required>
+    <div class="valid-feedback">
+      C'est bon !
+    </div>
+  </div>
+  <div class="col-md-4">
+    <label for="date" class="form-label">Date</label>
+    <div class="input-group">
+      <input type="date" class="form-control" id="date" aria-describedby="inputGroupPrepend" required value="2017-02-02" max="2017-02-02">
+      <div class="invalid-feedback">
+        Choissisez une vraie date -_-
+      </div>
+    </div>
+  </div>
+  <div class="col-md-2">
+    <label for="ville" class="form-label">Ville</label>
+    <input type="text" class="form-control" id="ville" required name ="ville">
+    <div class="invalid-feedback">
+      Un nom de ville siouplé
+    </div>
+  </div>
+  <div class="col-md-3">
+    <label for="rue" class="form-label">Rue</label>
+    <input type="text" class="form-control" id="rue" name ="rue" required>
+    <div class="invalid-feedback">
+      La rue
+    </div>
+  </div>
+  <div class="col-md-1">
+    <label for="numero" class="form-label">Num&eacute;ro</label>
+    <input type="number" class="form-control" id="numero" name ="numero" required>
+    <div class="invalid-feedback">
+      Un num&eacute;ro
+    </div>
+  </div>
+  <div class="col-md-3">
+    <label for="zipcode" class="form-label">Code postal</label>
+    <input type="text" class="form-control" id="zipcode" name ="zipcode" required>
+    <div class="invalid-feedback">
+      Un code zip valide
+    </div>
+  </div>
+  </div>
+  <div class="col-12">
+    <button class="btn btn-primary" type="submit">Enregistrement</button>
+  </div>
+</form>
+
+<script src="/js/form-validation.js"></script>
+
+<%- include('footer') -%>

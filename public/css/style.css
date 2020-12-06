@@ -1,0 +1,23 @@
+body{
+  margin-left: 2em;
+  margin-top: 2em;
+}
+
+
+button{
+  margin-top: 2em;
+}
+
+label{
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+
+form{
+  position: relative;
+}
+
+a{
+  color: aliceblue;
+  text-decoration: none;
+}
